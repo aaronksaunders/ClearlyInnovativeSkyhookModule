@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:module xmlns:ti="http://ti.appcelerator.org" xmlns:android="http://schemas.android.com/apk/res/android">
+	<!--
+		Similar to tiapp.xml, but contains module/platform specific
+		configuration in <iphone> and <android> sections
+	-->
+	<iphone>
+	</iphone>
+	<android xmlns:android="http://schemas.android.com/apk/res/android">
+		<!-- used to communicate with Skyhook's servers -->
+		<uses-permission android:name="android.permission.INTERNET" />
+		<!-- enables WiFi, if disabled, for the duration of a location request -->
+		<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+		<!-- used to obtain information about the WiFi environment -->
+		<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+		<!-- used to obtain cell tower ID -->
+		<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+		<uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+		<!-- used to access GPS location, for XPS functionality -->
+		<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+		<uses-permission android:name="android.permission.WAKE_LOCK" />
+	</android>
+</ti:module>
